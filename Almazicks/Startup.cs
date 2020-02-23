@@ -26,6 +26,7 @@ namespace Almazicks
             services.AddControllers();
             services.AddAutoMapper(typeof(AlmazicksProfile));
             services.AddTransient<IQuestService, QuestService>();
+            services.AddTransient<IHeroService, HeroService>();
             services.AddDbContext<DiamondsDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
