@@ -39,9 +39,10 @@ namespace BusinessLogic.Services
             return _mapper.Map<IEnumerable<HeroDto>>(heroes);
         }
 
-        public Task UpdateHeroAsync(int id, HeroDto hero)
-        {
-            throw new NotImplementedException();
-        }
+        //public async Task UpdateHeroAsync(int id, HeroDto hero)
+        //{
+        //    await _context.Update(_mapper.Map<Hero>(id, hero));
+        //    await _context.SaveChangesAsync();
+        //}
     }
 }

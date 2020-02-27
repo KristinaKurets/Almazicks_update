@@ -11,6 +11,6 @@ namespace BusinessLogic.Interfaces
         Task<HeroDto> GetHeroAsync(int id);
         Task<IEnumerable<HeroDto>> GetHeroesAsync();
         Task CreateHeroAsync(HeroDto hero);
-        Task UpdateHeroAsync(int id, HeroDto hero);
+        //Task UpdateHeroAsync(int id, HeroDto hero);
     }
 }

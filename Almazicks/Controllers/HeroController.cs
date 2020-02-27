@@ -25,7 +25,7 @@ namespace Almazicks.Controllers
         }
 
         // GET: api/Hero/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "Hero")]
         public async Task<HeroDto> GetHeroAsync(int id)
         {
             return await _heroService.GetHeroAsync(id);
